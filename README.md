@@ -4,6 +4,15 @@
 
 Simple starter for GraphQL API to use in my projects.
 
+## Techs
+
+- [Node.js](https://nodejs.org/en/)
+- [GraphQL.js](https://github.com/graphql/graphql-js)
+- [GraphQL Helix](https://www.graphql-helix.com/)
+- [Koa.js](https://koajs.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vitest](https://vitest.dev/)
+
 ## Cloning the repository
 
 ```bash
