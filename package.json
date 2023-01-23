@@ -4,7 +4,7 @@
   "main": "src/server.ts",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsup src",
+    "build": "tsup ./src/server.ts",
     "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint . --ext .ts",
@@ -66,6 +66,6 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "engines": {
-    "node": ">=18.12.1"
+    "node": ">=18.13.0"
   }
 }
