@@ -2,6 +2,7 @@ version: "3.8"
 services:
   mongodb_container:
     image: mongo:latest
+    container_name: mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
@@ -9,7 +10,13 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - mongodata:/data/db
+      - ./mongodata:/data/db
+
+  api:
+    container_name: graphqlapi
+    build: .
+    ports:
+      - 4000:4000
 
 volumes:
   mongodata:
